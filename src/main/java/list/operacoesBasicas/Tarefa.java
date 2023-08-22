@@ -1,7 +1,5 @@
 package list.operacoesBasicas;
 
-import list.ListaTarefa;
-
 public class Tarefa {
     //atributos
     private String descricao;

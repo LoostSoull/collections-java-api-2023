@@ -1,7 +1,5 @@
 package list.operacoesBasicas;
 
-import list.CarrinhoDeCompras;
-
 public class Item {
     private String nome;
     private Double preco;

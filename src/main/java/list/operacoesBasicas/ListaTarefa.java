@@ -1,4 +1,4 @@
-package list;
+package list.operacoesBasicas;
 
 import list.operacoesBasicas.Tarefa;
 
