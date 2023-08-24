@@ -12,7 +12,7 @@ Ordenação nas List
 
 ## Operações Básicas com List
 
-1. Lista de Tarefas
+### 1. Lista de Tarefas
 Crie uma classe chamada **"ListaTarefas"** que possui uma lista de tarefas como atributo. Cada tarefa é representada por uma classe chamada **"Tarefa"** que possui um atributo de descrição. Implemente os seguintes métodos:
 
 - adicionarTarefa(String descricao): Adiciona uma nova tarefa à lista com a descrição fornecida.
@@ -24,7 +24,7 @@ Crie uma classe chamada **"ListaTarefas"** que possui uma lista de tarefas como 
 - obterDescricoesTarefas(): Retorna uma lista contendo a descrição de todas as tarefas na lista.
 
   
-2. Carrinho de Compras:
+### 2. Carrinho de Compras:
 Crie uma classe chamada **"CarrinhoDeCompras"** que representa um carrinho de compras online. O carrinho deve ser implementado como uma lista de itens.
 Cada item é representado por uma classe chamada **"Item"** que possui atributos como nome, preço e quantidade. Implemente os seguintes métodos:
 
@@ -40,7 +40,7 @@ Cada item é representado por uma classe chamada **"Item"** que possui atributos
 
 ## Pesquisa em List
 
-1. Catálogo de Livros
+### 1. Catálogo de Livros
 Crie uma classe chamada **"CatalogoLivros"** que possui uma lista de objetos do tipo **"Livro"** como atributo. Cada livro possui atributos como título, autor e ano de publicação. Implemente os seguintes métodos:
 
 - adicionarLivro(String titulo, String autor, int anoPublicacao): Adiciona um livro ao catálogo.
@@ -51,7 +51,7 @@ Crie uma classe chamada **"CatalogoLivros"** que possui uma lista de objetos do 
   
 - pesquisarPorTitulo(String titulo): Pesquisa livros por título e retorna o primeiro livro encontrado.
   
-2. Soma de Números
+### 2. Soma de Números
 Crie uma classe chamada **"SomaNumeros"** que possui uma lista de números inteiros como atributo. Implemente os seguintes métodos:
 
 - adicionarNumero(int numero): Adiciona um número à lista de números.
@@ -67,7 +67,7 @@ Crie uma classe chamada **"SomaNumeros"** que possui uma lista de números intei
   
 ## Ordenação em List
 
-1. Ordenação de Pessoas
+### 1. Ordenação de Pessoas
 Crie uma classe chamada **"OrdenacaoPessoas"** que possui uma lista de objetos do tipo **"Pessoa"** como atributo. Cada pessoa possui atributos como nome, idade e altura. Implemente os seguintes métodos:
 
 - adicionarPessoa(String nome, int idade, double altura): Adiciona uma pessoa à lista.
@@ -76,7 +76,7 @@ Crie uma classe chamada **"OrdenacaoPessoas"** que possui uma lista de objetos d
   
 - ordenarPorAltura(): Ordena as pessoas da lista por altura usando um Comparator personalizado.
   
-2. Ordenação de Números
+### 2. Ordenação de Números
 Crie uma classe chamada **"OrdenacaoNumeros"** que possui uma lista de números inteiros como atributo. Implemente os seguintes métodos:
 
 - adicionarNumero(int numero): Adiciona um número à lista.
