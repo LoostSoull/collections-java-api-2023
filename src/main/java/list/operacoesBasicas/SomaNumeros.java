@@ -59,9 +59,9 @@ public class SomaNumeros {
                 '}';
     }
 
-    /*
-    Teste pratico da classe
-    public static void main(String[] args) {
+
+    //Teste pratico da classe
+    /*public static void main(String[] args) {
         SomaNumeros soma = new SomaNumeros();
 
         soma.adicionarNumero(1);
