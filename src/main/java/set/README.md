@@ -26,7 +26,7 @@ Pesquisa em Set
 - adicionarContato(String nome, int numero): Adiciona um contato à agenda.
 - exibirContatos(): Exibe todos os contatos da agenda.
 - pesquisarPorNome(String nome): Pesquisa contatos pelo nome e retorna uma conjunto com os contatos encontrados.
-atualizarNumeroContato(String nome, int novoNumero): Atualiza o número de telefone de um contato específico.
+- atualizarNumeroContato(String nome, int novoNumero): Atualiza o número de telefone de um contato específico.
 ## 2. Lista de Tarefas
    Crie uma classe chamada "ListaTarefas" que possui um conjunto de objetos do tipo "Tarefa" como atributo. Cada tarefa possui um atributo de descrição e um atributo booleano para indicar se a tarefa foi concluída ou não. Implemente os seguintes métodos:
 
