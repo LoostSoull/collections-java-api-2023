@@ -11,39 +11,41 @@ public class AgendaContatos {
         this.contatoSet = new HashSet<>();
     }
 
-    public void adicionarContato(String nome, int numero){
-        contatoSet.add(new Contato(nome,numero));
+    public void adicionarContato(String nome, int numero) {
+        contatoSet.add(new Contato(nome, numero));
     }
 
-    public void exibirContatos(){
+    public void exibirContatos() {
         System.out.println(contatoSet);
     }
 
-    public Set<Contato> pesquisarPorNome(String nome){
+    public Set<Contato> pesquisarPorNome(String nome) {
         Set<Contato> contatoPorNome = new HashSet<>();
-        if(!contatoSet.isEmpty()){
-            for(Contato c : contatoSet){
-                if(c.getNome().startsWith(nome)){
+        if (!contatoSet.isEmpty()) {
+            for (Contato c : contatoSet) {
+                if (c.getNome().startsWith(nome)) {
                     contatoPorNome.add(c);
 
                 }
 
             }
-        }return contatoPorNome;
+        }
+        return contatoPorNome;
     }
 
-    public Contato atualizarNumeroContato(String nome, int novoNumero){
+    public Contato atualizarNumeroContato(String nome, int novoNumero) {
         Contato contatoAtualizado = null;
-        if(!contatoSet.isEmpty()){
-            for(Contato c : contatoSet){
-                if(c.getNome().equalsIgnoreCase(nome)){
+        if (!contatoSet.isEmpty()) {
+            for (Contato c : contatoSet) {
+                if (c.getNome().equalsIgnoreCase(nome)) {
                     c.setNumeroTelefone(novoNumero);
                     contatoAtualizado = c;
                     break;
                 }
 
             }
-        } return contatoAtualizado;
+        }
+        return contatoAtualizado;
     }
 
     //criado para teste das classes
