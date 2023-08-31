@@ -22,32 +22,43 @@ public class GerenciadorAlunos {
 
     public void removerAluno(long matricula) {
         Aluno alunoParaRemover = null;
-        for (Aluno a : alunoSet) {
-            if (a.getMatricula() == matricula) {
-                alunoParaRemover = a;
-                break;
+        if (!alunoSet.isEmpty()) {
+            for (Aluno a : alunoSet) {
+                if (a.getMatricula() == matricula) {
+                    alunoParaRemover = a;
+                    break;
+                }
             }
+            alunoSet.remove(alunoParaRemover);
+        } else {
+            System.out.println("Essa Lista esta vazia, impossivel remover!");
         }
-        alunoSet.remove(alunoParaRemover);
+
 
     }
 
-    public Set<Aluno> exibirAlunosPorNome() {
+    public void exibirAlunosPorNome() {
         Set<Aluno> alunosPorNome = new TreeSet<>(alunoSet);
-        return alunosPorNome;
+        if (!alunoSet.isEmpty()) {
+            System.out.println(alunosPorNome);
+        }
     }
 
-    public Set<Aluno> exibirAlunosPorNota() {
+    public void exibirAlunosPorNota() {
         Set<Aluno> alunosPorNota = new TreeSet<>(new ComparatorPorNota());
-        alunosPorNota.addAll(alunoSet);
-        return alunosPorNota;
+        if (!alunoSet.isEmpty()) {
+            alunosPorNota.addAll(alunoSet);
+            System.out.println(alunosPorNota);
+        }
+
     }
 
     public void exibirAlunos() {
         System.out.println(alunoSet);
     }
-        //criado para teste de classe
-   /* public static void main(String[] args) {
+
+    //criado para teste de classe
+    public static void main(String[] args) {
         GerenciadorAlunos gera = new GerenciadorAlunos();
 
         gera.adicionarAluno("lucas", 1111, 10.0);
@@ -61,7 +72,7 @@ public class GerenciadorAlunos {
         gera.exibirAlunos();
 
 
-        System.out.println(gera.exibirAlunosPorNota());
-        System.out.println(gera.exibirAlunosPorNome());
-    }*/
+        gera.exibirAlunosPorNota();
+        gera.exibirAlunosPorNome();
+    }
 }
