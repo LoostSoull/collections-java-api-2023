@@ -65,10 +65,10 @@ public class Produto implements Comparable<Produto> {
 //classe externa criada.
 //ajuda no polimorfismo
 //ajuda na manutenção, pois delega funções especificas, cria metodos especificos.
-class ComparatorPorPreco implements Comparator<Produto>{
+class ComparatorPorPreco implements Comparator<Produto> {
 
     @Override
     public int compare(Produto p1, Produto p2) {
-        return Double.compare(p1.getPreco() , p2.getPreco());
+        return Double.compare(p1.getPreco(), p2.getPreco());
     }
 }
