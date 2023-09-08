@@ -36,7 +36,7 @@ public class AgendaContatos {
     //criado somente para teste da classe
     /*public static void main(String[] args) {
         AgendaContatos agenda = new AgendaContatos();
-
+        agenda.adicionarContato("lucas",114523);
         agenda.adicionarContato("lucas",11958746);
         agenda.adicionarContato("lula",145746);
         agenda.adicionarContato("luka",116);
