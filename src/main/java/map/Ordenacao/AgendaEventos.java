@@ -37,7 +37,8 @@ public class AgendaEventos {
 
     }
 
-    public static void main(String[] args) {
+    //CRIADO PARA TESTES DA CLASSE
+    /*public static void main(String[] args) {
         AgendaEventos eventos = new AgendaEventos();
         eventos.adicionarEvento(LocalDate.of(2023, Month.SEPTEMBER,15),"evento 1","aniversario");
         eventos.adicionarEvento(LocalDate.of(2023, Month.SEPTEMBER,25),"evento 2","aniversario");
@@ -46,5 +47,5 @@ public class AgendaEventos {
         eventos.obterProximoEvento();
 
 
-    }
+    }*/
 }
